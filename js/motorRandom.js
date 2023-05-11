@@ -34,7 +34,7 @@ for (let i = 0; i < randomClothes.length; i++) {
   const img = document.createElement("img");
   // Añadir los atributos a las imagenes
   img.src = clothes[i].src;
-  img.alt = clothes[i].alt;
+  img.alt = clothes[i].alt;ves
 
   // Agregar la imagen al div
   divCard.appendChild(img);
