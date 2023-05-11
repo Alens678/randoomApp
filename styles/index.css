@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #manequeen{
+        display:none;
+    }
+    body{
+        background-color: #95CFB7;
+    }
+}
+
+.intro{
+    
+}
+
+h1{
+    color:#FC4F00;
+    font-family: 'Righteous', cursive;
+    -webkit-text-stroke: 0.2px #000000;
+}
+
