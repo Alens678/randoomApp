@@ -25,22 +25,32 @@ body{
 h1{
     color:#FC4F00;
     font-family: 'Righteous', cursive;
+<<<<<<< HEAD
     -webkit-text-stroke: 0.2px #000000;
+=======
+    -webkit-text-stroke: 2.5px #000000;
+>>>>>>> feat_aleix
     font-size: 48px;
     display: flex;
 }
 
 h3{
-    color:#FC4F00;
-    font-family: 'Advent Pro', sans-serif;
+    color:#121212;
+    font-family: 'Righteous', cursive;
     font-size: 38px;
     margin-top: 25px;
 }
 
 p{
     padding: 35px;
+<<<<<<< HEAD
     font-family: 'Advent Pro', sans-serif;;
     line-height: 21.53px;
+=======
+    font-family: 'Advent Pro', sans-serif;
+    line-height: 21.53px;
+    color: #121212;
+>>>>>>> feat_aleix
 }
 
 button{
@@ -50,9 +60,13 @@ button{
     width: 82px;
     height: 36px;
     background-color: #FC4F00;
+<<<<<<< HEAD
     position: absolute;
     border-radius: 20px;
     align-self: center;
+=======
+    border-radius: 20px;
+>>>>>>> feat_aleix
 }
 
 .containerPadre{
