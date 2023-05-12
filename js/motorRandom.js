@@ -6,17 +6,17 @@ const cardPies = document.getElementById("card-pies");
 // Crear array vacio para introducir los indices del array principal de forma aleatoria
 
 // Declarar un array vaciio donde se guardarán los indices del array original desordenados
-// const randomClothes = [];
+const randomClothes = [];
 
-// // Recorrer array original
-// for (let i = 0; i < clothes.length; i++) {
-//   let randomClothe = Math.floor(Math.random() * clothes.length);
+// Recorrer array original
+for (let i = 0; i < clothes.length; i++) {
+  let randomClothe = Math.floor(Math.random() * clothes.length);
 
-//   while (randomClothes.includes(randomClothe)) {
-//     randomClothe = Math.floor(Math.random() * clothes.length);
-//   }
-//   randomClothes.push(randomClothe);
-// }
+  while (randomClothes.includes(randomClothe)) {
+    randomClothe = Math.floor(Math.random() * clothes.length);
+  }
+  randomClothes.push(randomClothe);
+}
 
 // Bucle para generar imagenes
 for (let i = 0; i < clothes.length; i++) {
@@ -25,7 +25,7 @@ for (let i = 0; i < clothes.length; i++) {
   const img = document.createElement("img");
   // Añadir los atributos a las imagenes
   img.src = clothes[i].src;
-  img.alt = clothes[i].alt;ves
+  img.alt = clothes[i].alt;
 
   // Agregar la imagen al div
   divCard.appendChild(img);
@@ -33,3 +33,12 @@ for (let i = 0; i < clothes.length; i++) {
   // Agregar el div al artículo
   cardCabeza.appendChild(divCard);
 }
+
+// Funcion para mostar imagen aleatoria y desaparecer carrousel
+const selectRandom = () => {
+  // Desaparecer carrousel divCard añadir clase .hidden
+  // Mostar imagen random
+};
+
+// Evento click
+const btnStart = document.addEventListener("click", selectRandom);

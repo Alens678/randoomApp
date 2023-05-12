@@ -79,3 +79,6 @@ button{
     top: 129px;
     background: url(maniquí-de-madera-aislado-en-blanco-44625363-removebg-preview.png);
 }
+#dress{
+    z-index: 100;
+}
