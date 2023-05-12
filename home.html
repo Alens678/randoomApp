@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles CSS -->
     <link rel="stylesheet" href="/styles/main.css" />
+    <!-- Styles carroussel -->
+    <link rel="stylesheet" href="/styles/carrousel.css" />
     <title>RANDOMAPP - Home</title>
   </head>
   <body>
@@ -13,10 +15,14 @@
 
     <section>
       <!-- Todos los carruseles de fotos -->
-      <article id="card-cabeza"></article>
+      <article id="card-cabeza" class="carrousel">
+        <div id="select-cabeza" class="hidden"></div>
+      </article>
       <article id="card-pecho"></article>
       <article id="card-piernas"></article>
       <article id="card-pies"></article>
+
+      <button id="start">Start Random</button>
     </section>
 
     <!-- script JS -->
