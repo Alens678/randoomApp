@@ -45,6 +45,13 @@ for (let i = 0; i < clothes.length; i++) {
 let exist = false;
 
 const randomImg = () => {
+for (let i = 0; i < clothes.length; i++) {
+  for (let j = 0; j < clothes[i].length; j++) {
+    let randomClotheIndex = Math.floor(Math.random() * clothes[i][j].length);
+  }
+}
+
+
   let randomClotheIndexCabeza = Math.floor(Math.random() * clothes[0].length);
   let randomClotheIndexPecho = Math.floor(Math.random() * clothes[1].length);
   let randomClotheIndexPiernas = Math.floor(Math.random() * clothes[2].length);
