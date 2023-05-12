@@ -1,4 +1,5 @@
 // Seleccionar los diferentes articles del DOM
+const carrousel = document.getElementsByClassName("carrousel")
 const cardCabeza = document.getElementById("card-cabeza");
 const cardPecho = document.getElementById("card-pecho");
 const cardPiernas = document.getElementById("card-piernas");
@@ -20,7 +21,7 @@ for (let i = 0; i < clothes.length; i++) {
 
 // Bucle para generar imagenes
 for (let i = 0; i < clothes.length; i++) {
-  const divCard = document.createElement("div");
+   const divCard = document.createElement("div");
   // Crear elemento img
   const img = document.createElement("img");
   // Añadir los atributos a las imagenes
@@ -36,9 +37,13 @@ for (let i = 0; i < clothes.length; i++) {
 
 // Funcion para mostar imagen aleatoria y desaparecer carrousel
 const selectRandom = () => {
+  
   // Desaparecer carrousel divCard añadir clase .hidden
+for (let i = 0; i < carrousel.length; i++) {
+  carrousel[i].classList.add("hidden");
+}
   // Mostar imagen random
+  
 };
-
 // Evento click
 const btnStart = document.addEventListener("click", selectRandom);
