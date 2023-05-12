@@ -9,7 +9,7 @@ const cardPies = document.getElementById("card-pies");
 // Declarar un array vaciio donde se guardarán los indices del array original desordenados
 const randomClothes = [];
 
-// Bucle para generar las imágenes y agregarlas a los elementos correspondientes
+// Bucle para generar las imágenes y agregit checkou
 for (let i = 0; i < clothes.length; i++) {
   for (let j = 0; j < clothes[i].length; j++) {
     const divCard = document.createElement("div");
