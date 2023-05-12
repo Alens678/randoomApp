@@ -10,14 +10,34 @@ const cardPies = document.getElementById("card-pies");
 const randomClothes = [];
 
 // Recorrer array original
-for (let i = 0; i < clothes.length; i++) {
+/*for (let i = 0; i < clothes.length; i++) {
   let randomClothe = Math.floor(Math.random() * clothes.length);
 
   while (randomClothes.includes(randomClothe)) {
     randomClothe = Math.floor(Math.random() * clothes.length);
   }
   randomClothes.push(randomClothe);
+}*/
+
+//Funcion generar imagen random
+let exist = false;
+
+const randomImg = () => {
+  let randomClotheIndex = Math.floor(Math.random() * clothes.length);
+  const divCabeza = document.getElementById("select-cabeza");
+  // Crear elemento img
+  const img = document.createElement("img");
+  // Añadir los atributos a las imagenes
+  img.src = clothes[randomClotheIndex].src;
+  img.alt = clothes[randomClotheIndex].alt;
+
+  // Agregar la imagen al div
+   divCabeza.appendChild(img);
+
+   exist = true;
 }
+
+
 
 // Bucle para generar imagenes
 for (let i = 0; i < clothes.length; i++) {
@@ -43,6 +63,12 @@ for (let i = 0; i < carrousel.length; i++) {
   carrousel[i].classList.add("hidden");
 }
   // Mostar imagen random
+  if(!exist){
+    randomImg();
+  } else {
+    alert("mensaje")
+  }
+  
   
 };
 // Evento click
