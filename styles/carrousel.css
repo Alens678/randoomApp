@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(180deg, #95CFB7 0%, #8EE388 100%);
 }
 
 .hidden {
@@ -18,18 +19,21 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  
 }
 
 section article {
   display: flex;
   flex-direction: row;
+  
 }
 
 img {
   width: 200px;
-  height: 200px;
-  overflow: hidden;
+
 }
+
+
 
 /* // Animation */
 @keyframes scroll {
@@ -60,12 +64,11 @@ img {
 }
 .slider {
   width: 60%;
-  background: white;
-  height: 140px;
+  background: none;
+  height: 100%;
   margin: auto;
   overflow: hidden;
   position: relative;
-  border: 1px solid #e5e5e5;
 }
 .slider div {
   display: flex;
