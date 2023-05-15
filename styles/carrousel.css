@@ -2,12 +2,23 @@ body {
   align-items: center;
   flex-direction: column;
   display: flex;
-  height: 100vh;
+  /* width: 85vw; */
+  /* height: 100vh; */
   justify-content: center;
 }
 
 .hidden {
   display: none;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 section article {
@@ -18,6 +29,7 @@ section article {
 img {
   width: 200px;
   height: 200px;
+  overflow: hidden;
 }
 
 /* // Animation */
@@ -29,45 +41,15 @@ img {
     transform: translateX(calc(-250px * 7));
   }
 }
-/* Slider */
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
 
-  &::before,
-  &::after {
-    @include white-gradient;
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
+/* Media Queries */
 
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
+@media (min-width: 600px) {
+}
 
-  &::before {
-    left: 0;
-    top: 0;
-  }
-
-  .slide-track {
-    animation: scroll $animationSpeed linear infinite;
+@media screen and (min-width: 600px) {
+  .section-carrousel {
     display: flex;
-    width: calc(250px * 14);
-  }
-
-  .slide {
-    height: 100px;
-    width: 250px;
+    flex-wrap: wrap;
   }
 }
