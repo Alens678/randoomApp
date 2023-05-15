@@ -47,6 +47,11 @@ const clothes = [
       alt: 'Pecho Freddy',
       clase: 'pecho',
     },
+    {
+      src: './assets/img/pecho/pecho5.png',
+      alt: 'Pecho Freddy',
+      clase: 'pecho',
+    },
   ],
   [
     {
