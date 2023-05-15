@@ -45,20 +45,20 @@ for (let i = 0; i < clothes.length; i++) {
 let exist = false;
 
 const randomImg = () => {
-  for (let i = 0; i <clothes.length; i++) {
+  for (let i = 0; i < clothes.length; i++) {
     const divCabeza = document.getElementById("select-cabeza");
     const divPecho = document.getElementById("select-pecho");
     const divPiernas = document.getElementById("select-piernas");
     const divPies = document.getElementById("select-pies");
-    
-    let imgRan = clothes[i][Math.floor(Math.random() *clothes[i].length)]
+
+    let imgRan = clothes[i][Math.floor(Math.random() * clothes[i].length)];
     const divCard = document.createElement("div");
     const img = document.createElement("img");
 
     console.log(imgRan);
 
-    img.src=imgRan.src;
-    img.alt=imgRan.alt;
+    img.src = imgRan.src;
+    img.alt = imgRan.alt;
 
     divCard.appendChild(img);
 
@@ -89,4 +89,5 @@ const selectRandom = () => {
   }
 };
 // Evento click
-const btnStart = document.addEventListener("click", selectRandom);
+const btnStart = document.getElementById("start");
+btnStart.addEventListener("click", selectRandom);
