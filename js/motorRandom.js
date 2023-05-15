@@ -13,10 +13,12 @@ const randomClothes = [];
 for (let i = 0; i < clothes.length; i++) {
   for (let j = 0; j < clothes[i].length; j++) {
     const divCard = document.createElement("div");
+    divCard.classList.add("slide-track");
     const img = document.createElement("img");
 
     img.src = clothes[i][j].src;
     img.alt = clothes[i][j].alt;
+    img.classList.add("slide");
 
     divCard.appendChild(img);
 
