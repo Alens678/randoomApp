@@ -33,6 +33,23 @@ img {
 
 }
 
+h1{
+  color:#FC4F00;
+  font-family: 'Righteous', cursive;
+  -webkit-text-stroke: 2.5px #000000;
+  font-size: 48px;
+  display: flex;
+}
+
+button{
+  color: #121212;
+  font-family: 'Advent Pro', sans-serif;
+  position: relative;
+  width: 156px;
+  height: 36px;
+  background-color: #FC4F00;
+  border-radius: 20px;
+}
 
 
 /* // Animation */
