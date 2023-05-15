@@ -1,7 +1,7 @@
 const clothes = [
   [
     {
-      src: "https://i.pinimg.com/originals/19/e3/5c/19e35c3846b9a9fc8f40b75ca8d8e5dc.jpg",
+      src: "./assets/img/cabeza/cabeza1.png",
       alt: "Gorro Mario",
       clase: "cabeza",
     },
