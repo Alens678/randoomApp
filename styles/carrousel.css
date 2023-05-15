@@ -3,8 +3,8 @@ body {
   flex-direction: column;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
   background: linear-gradient(180deg, #95CFB7 0%, #8EE388 100%);
+ 
 }
 
 .hidden {
@@ -13,13 +13,13 @@ body {
 
 section {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+ 
+
 }
 
 section article {
@@ -28,10 +28,6 @@ section article {
   
 }
 
-img {
-  width: 200px;
-
-}
 
 h1{
   color:#FC4F00;
@@ -49,6 +45,14 @@ button{
   height: 36px;
   background-color: #FC4F00;
   border-radius: 20px;
+}
+a{
+  text-decoration : none;
+}
+
+.section-carrousel {
+ margin: 0;
+ padding: 0;
 }
 
 
