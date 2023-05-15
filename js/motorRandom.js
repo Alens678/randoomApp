@@ -45,35 +45,33 @@ for (let i = 0; i < clothes.length; i++) {
 let exist = false;
 
 const randomImg = () => {
-  let randomClotheIndexCabeza = Math.floor(Math.random() * clothes[0].length);
-  let randomClotheIndexPecho = Math.floor(Math.random() * clothes[1].length);
-  let randomClotheIndexPiernas = Math.floor(Math.random() * clothes[2].length);
-  let randomClotheIndexPies = Math.floor(Math.random() * clothes[3].length);
-  const divCabeza = document.getElementById("select-cabeza");
-  const divPecho = document.getElementById("select-pecho");
-  const divPiernas = document.getElementById("select-piernas");
-  const divPies = document.getElementById("select-pies");
-  // Crear elemento img
-  const imgCabeza = document.createElement("img");
-  const imgPecho = document.createElement("img");
-  const imgPiernas = document.createElement("img");
-  const imgPies = document.createElement("img");
-  // Añadir los atributos a las imagenes
-  imgCabeza.src = clothes[randomClotheIndexCabeza].src;
-  imgCabeza.alt = clothes[randomClotheIndexCabeza].alt;
-  imgPecho.src = clothes[randomClotheIndexPecho].src;
-  imgPecho.alt = clothes[randomClotheIndexPecho].alt;
-  imgPiernas.src = clothes[randomClotheIndexPiernas].src;
-  imgPiernas.alt = clothes[randomClotheIndexPiernas].alt;
-  imgPies.src = clothes[randomClotheIndexPies].src;
-  imgPies.alt = clothes[randomClotheIndexPies].alt;
+  for (let i = 0; i <clothes.length; i++) {
+    const divCabeza = document.getElementById("select-cabeza");
+    const divPecho = document.getElementById("select-pecho");
+    const divPiernas = document.getElementById("select-piernas");
+    const divPies = document.getElementById("select-pies");
+    
+    let imgRan = clothes[i][Math.floor(Math.random() *clothes[i].length)]
+    const divCard = document.createElement("div");
+    const img = document.createElement("img");
 
-  // Agregar la imagen al div
-  divCabeza.appendChild(imgCabeza);
-  divPecho.appendChild(imgPecho);
-  divPiernas.appendChild(imgPiernas);
-  divPies.appendChild(imgPies);
+    console.log(imgRan);
 
+    img.src=imgRan.src;
+    img.alt=imgRan.alt;
+
+    divCard.appendChild(img);
+
+    if (i === 0) {
+      divCabeza.appendChild(divCard);
+    } else if (i === 1) {
+      divPecho.appendChild(divCard);
+    } else if (i === 2) {
+      divPiernas.appendChild(divCard);
+    } else if (i === 3) {
+      divPies.appendChild(divCard);
+    }
+  }
   exist = true;
 };
 

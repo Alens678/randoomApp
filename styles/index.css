@@ -7,8 +7,23 @@ body{
     background: linear-gradient(180deg, #95CFB7 0%, #8EE388 100%);
 }
 
+#dress{
+    width: 50%;
+    position: absolute;
+    margin-top: 24%;
+    right: 29%;
+  
+    
+}
+.img{
+    width:100%;
+}
+
 @media screen and (max-width: 500px) {
     #manequeen{
+        display:none;
+    }
+    #dress{
         display:none;
     }
 
