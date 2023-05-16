@@ -87,7 +87,7 @@ const selectRandom = () => {
   if (!exist) {
     randomImg();
   } else {
-    alert("mensaje");
+    alert("Refresca la pagina y juega de nuevo");
   }
 };
 // Evento click

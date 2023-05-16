@@ -1,22 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-}
+ }
 
 body{
-    background: linear-gradient(180deg, #95CFB7 0%, #8EE388 100%);
+    display:flex;    
+    overflow: hidden;
 }
 
-#dress{
-    width: 50%;
-    position: absolute;
-    margin-top: 24%;
-    right: 29%;
-  
-    
-}
 .img{
-    width:100%;
+    position: absolute;
+    z-index: 0;
+    left: 65vw;
+    top:12vh;
+    }
+
+
+
+#dress{
+    position: absolute;
+    width:18vw;
+    z-index: 2;
+    left: 7vw;
+    top: 18vh;
 }
 
 @media screen and (max-width: 500px) {
@@ -35,6 +41,7 @@ body{
 .intro{
     display: flex;
     flex-direction: column;
+    
 }
 
 h1{
@@ -61,7 +68,7 @@ p{
 
 button{
     color: #121212;
-    font-family: 'Righteous', cursive;
+    font-family: 'Advent Pro', sans-serif;
     position: relative;
     width: 82px;
     height: 36px;
@@ -86,14 +93,4 @@ button{
     margin-top: 32%;
 }
 
-.img{
-    position: absolute;
-    width: 476px;
-    height: 765px;
-    left: 842px;
-    top: 129px;
-    background: url(maniquí-de-madera-aislado-en-blanco-44625363-removebg-preview.png);
-}
-#dress{
-    z-index: 100;
-}
+

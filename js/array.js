@@ -49,6 +49,30 @@ const clothes = [
       src: "./assets/img/cabeza/caebeza5.png",
       alt: "Gorro Bruja",
       clase: "cabeza",
+    },{
+      src: "./assets/img/cabeza/cabeza1.png",
+      alt: "Gorro mago",
+      clase: "cabeza",
+    },
+    {
+      src: "./assets/img/cabeza/cabeza2.png",
+      alt: "Gorro Marinero",
+      clase: "cabeza",
+    },
+    {
+      src: "./assets/img/cabeza/cabeza3.png",
+      alt: "Gorro Papa Noel",
+      clase: "cabeza",
+    },
+    {
+      src: "./assets/img/cabeza/cabeza4.png",
+      alt: "Gorro chef",
+      clase: "cabeza",
+    },
+    {
+      src: "./assets/img/cabeza/caebeza5.png",
+      alt: "Gorro Bruja",
+      clase: "cabeza",
     },
   ],
   [

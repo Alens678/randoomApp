@@ -4,6 +4,8 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(180deg, #95CFB7 0%, #8EE388 100%);
+ 
 }
 
 .hidden {
@@ -12,17 +14,19 @@ body {
 
 section {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  
+
 }
 
 section article {
   display: flex;
   flex-direction: row;
+  
 }
 
 img {
@@ -30,6 +34,35 @@ img {
   height: 200px;
   overflow: hidden;
 }
+
+
+h1{
+  color:#FC4F00;
+  font-family: 'Righteous', cursive;
+  -webkit-text-stroke: 2.5px #000000;
+  font-size: 48px;
+  display: flex;
+}
+
+button{
+  color: #121212;
+  font-family: 'Advent Pro', sans-serif;
+  position: relative;
+  width: 156px;
+  height: 36px;
+  background-color: #FC4F00;
+  border-radius: 20px;
+}
+a{
+  text-decoration : none;
+}
+
+.section-carrousel {
+ margin: 0;
+ padding: 0;
+ 
+}
+
 
 /* // Animation */
 @keyframes scroll {
@@ -60,17 +93,18 @@ img {
 }
 .slider {
   width: 60%;
-  background: white;
+  background: none;
   height: 140px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  border: 1px solid #e5e5e5;
+ 
 }
 .slider div {
   display: flex;
   width: calc(250px * 6);
   height: 100%;
+ 
 }
 
 #card-cabeza div,
@@ -82,15 +116,12 @@ img {
   animation: scrollReverse 10s linear infinite;
 }
 .slide {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-}
-.slide {
   width: 250px;
   height: 100%;
   text-align: center;
+  
 }
+
 
 /* Media Queries */
 
