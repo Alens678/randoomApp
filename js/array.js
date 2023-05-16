@@ -1,7 +1,7 @@
 const clothes = [
   [
     {
-      src: "assets/img/cabeza/cabeza1.png",
+      src: ".assets/img/cabeza/cabeza1.png",
       alt: "Gorro mago",
       clase: "cabeza",
     },
