@@ -4,12 +4,15 @@ const cardCabeza = document.getElementById("card-cabeza");
 const cardPecho = document.getElementById("card-pecho");
 const cardPiernas = document.getElementById("card-piernas");
 const cardPies = document.getElementById("card-pies");
-// Crear array vacio para introducir los indices del array principal de forma aleatoria
-
-// Declarar un array vaciio donde se guardarán los indices del array original desordenados
+const btnStart = document.getElementById("start");
+// Declarar un array vacio donde se guardarán los objetos seleccionados del array clothes
 const randomClothes = [];
+//Variable que me permite evaluar si existe un random outfit generado por randomImg para ocultar el carousel en selectRandom()
+let exist = false;
 
-// Bucle para generar las imágenes y agregit checkou
+
+// Bucle para generar las imágenes del carrousel
+function printCarousel() {
 for (let i = 0; i < clothes.length; i++) {
   for (let j = 0; j < clothes[i].length; j++) {
     const divCard = document.createElement("div");
@@ -33,18 +36,14 @@ for (let i = 0; i < clothes.length; i++) {
     }
   }
 }
-// Recorrer array original
-/*for (let i = 0; i < clothes.length; i++) {
-  let randomClothe = Math.floor(Math.random() * clothes.length);
+}
 
-  while (randomClothes.includes(randomClothe)) {
-    randomClothe = Math.floor(Math.random() * clothes.length);
-  }
-  randomClothes.push(randomClothe);
-}*/
+//Evento para imprimir el carousel una vez halla cargado la pagina.
+window.addEventListener('load',function(){
+  printCarousel();
+});
 
-//Funcion generar imagen random
-let exist = false;
+//Función que genera el outfit randomized y agregar los objetos al arrar randomClothes[] 
 
 const randomImg = () => {
   for (let i = 0; i < clothes.length; i++) {
@@ -64,6 +63,8 @@ const randomImg = () => {
 
     divCard.appendChild(img);
 
+    randomClothes.push(imgRan);
+
     if (i === 0) {
       divCabeza.appendChild(divCard);
     } else if (i === 1) {
@@ -77,19 +78,20 @@ const randomImg = () => {
   exist = true;
 };
 
+
 // Funcion para mostar imagen aleatoria y desaparecer carrousel
 const selectRandom = () => {
   // Desaparecer carrousel divCard añadir clase .hidden
   for (let i = 0; i < carrousel.length; i++) {
     carrousel[i].classList.add("hidden");
   }
-  // Mostar imagen random
+  // Mostar imagen random llamando 
   if (!exist) {
     randomImg();
   } else {
     alert("Refresca la pagina y juega de nuevo");
   }
+  
 };
-// Evento click
-const btnStart = document.getElementById("start");
+// Evento click en el boton start
 btnStart.addEventListener("click", selectRandom);
