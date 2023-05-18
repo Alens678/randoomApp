@@ -21,10 +21,10 @@ body {
 
 #dress {
   position: absolute;
-  width: 162px;
+  width: 227px;
   z-index: 2;
-  left: 139px;
-  top: 128px;
+  left: 109px;
+  top: 118px;
 }
 
 @media screen and (max-width: 500px) {
