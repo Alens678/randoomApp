@@ -11,10 +11,20 @@ button {
   border: none;
   letter-spacing: 2px;
   cursor: pointer;
-  width: 233px;
-  height: 55px;
+  width: fit-content;
+  /* height: 55px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 button:hover {
   background: #e3acd0;
+}
+
+#crossing-fingers{
+  height: 35px;
+  overflow: hidden;
+  width: min-content;
 }

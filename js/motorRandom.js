@@ -75,6 +75,8 @@ const randomImg = () => {
     }
   }
   exist = true;
+
+  
 };
 
 // Funcion para mostar imagen aleatoria y desaparecer carrousel

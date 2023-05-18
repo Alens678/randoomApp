@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Styles carroussel -->
-    <link rel="stylesheet" href="styles/carrousel.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="./styles/buttons.css" />
-    <title>RANDOMAPP - Home</title>
+    <!-- Styles  -->
+    <link rel="stylesheet" href="styles/randoufizado.css">
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>RANDOM OUTFIT</title>
   </head>
   <body>
-    <a href="index.html"><h1>RANDOUTFIT</h1></a>
-
+    <a href="index.html"><h1 id="random-result">RANDOUTFIZADO!</h1></a>
+    <div class="acciones-titulos">
+      <h4>Busca otra prenda</h4><h4>Agrega tu prenda</h4>
+    </div>
+    
+    <div class="container-padre">
+      <div class="refresh-container">
+        <img class="refresh" src="assets/img/iconos/refresh.svg" alt="Genera otro gorro">
+        <img class="refresh"  src="assets/img/iconos/refresh.svg" alt="Genera otra camisa/blusa">
+        <img class="refresh"  src="assets/img/iconos/refresh.svg" alt="Genera otro pantalon/falda">
+        <img class="refresh"  src="assets/img/iconos/refresh.svg" alt="Genera otros zapatos">
+      </div>
+        
     <section class="section-selected">
       <div id="select-cabeza"></div>
       <div id="select-pecho"></div>
@@ -21,13 +41,33 @@
       <div id="select-pies"></div>
     </section>
 
-    <button id="start">RANDOUFIZATE</button>
+    <div class="add-container"> 
+      <img class="add" src="assets/img/iconos/add.svg" alt="Añade tu propio gorro">
+      <img class="add" src="assets/img/iconos/add.svg" alt="Añade tu propia camisa/blusa">
+      <img class="add" src="assets/img/iconos/add.svg" alt="Añade tu propio pantalon">
+      <img class="add" src="assets/img/iconos/add.svg" alt="Añade tus propios zapatos">
+  </div>
+    </div>  
+    <h5>CALIFICA TU OUTFIT!</h5>
+    <div class="like">
+      <img id="like" src="assets/img/iconos/👍.png" alt="Dale like a tu outfit">
+      <img  src="assets/img/iconos/👎.svg" alt="Dale dislike a tu outfit">
+    </div>
+    <div class="botones-finales">
+      <button>COMPARTIR</button>
+      <button>FOTO</button>
+      <button>ATRÁS</button>
+    </div>
+
+      
+   
+
 
     <!-- script JS -->
     <script src="js/array.js"></script>
     <!-- JS -->
     <script src="js/motorRandom.js"></script>
     <!-- Carga imagen random -->
-    <script src="randomImage.js"></script>
+    <script src="js/randomImage.js"></script>
   </body>
 </html>

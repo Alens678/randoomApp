@@ -5,10 +5,15 @@
 }
 
 body {
-  background: linear-gradient(180deg, #95cfb7 0%, #8ee388 100%);
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(180deg, #95cfb7 0%, #8ee388 100%);
+  margin-top: -5px;
+  overflow: hidden;
 }
-
 #presentacion {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,6 +21,7 @@ body {
 
 #manequeen {
   width: 200px;
+  height: 213px;
 }
 
 .container-padre {
@@ -27,6 +33,7 @@ body {
   grid-row: 2;
   display: flex;
   justify-content: center;
+
 }
 .intro-juego {
   display: flex;
@@ -56,11 +63,17 @@ body {
     line-height: 22px;
   }
 }
+
 h1 {
   font-family: "Righteous", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 52px;
-  color: #fc4f00;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #fc4f00;
+    
+}
+
+a{
+  text-decoration: none;
 }

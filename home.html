@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Styles carroussel -->
-    <link rel="stylesheet" href="styles/carrousel.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="./styles/carrousel.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
     <title>RANDOMAPP - Home</title>
   </head>
   <body>
-    <a href="index.html"><h1>RANDOUTFIT</h1></a>
+    <header>
+      <a href="index.html"><h1>RANDOUTFIT</h1></a>
+    </header>
+    
+    <a href="./randoufizado.html"><button id="start">RANDOUFIZATE <img src="assets/img/iconos/🤞.svg" alt="crossing fingers" id="crossing-fingers"></button></a>
 
     <section class="section-carrousel">
       <!-- Todos los carruseles de fotos -->
@@ -21,15 +35,12 @@
       <article id="card-piernas" class="carrousel slider"></article>
       <article id="card-pies" class="carrousel slider"></article>
     </section>
-    <!-- <div class="img"></div> -->
-
-    <section class="section-selected">
-      <div id="select-cabeza"></div>
-      <div id="select-pecho"></div>
-      <div id="select-piernas"></div>
-      <div id="select-pies"></div>
-    </section>
-    <a href="./randoufizado.html"><button id="start">RANDOUFIZATE</button></a>
+     <br>
+     <br>
+    <div class="img">
+      <img id="manequeen" src="./assets/img/maniqui.gif" alt="img" />
+    </div>
+    
 
     <!-- script JS -->
     <script src="js/array.js"></script>

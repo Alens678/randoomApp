@@ -1,11 +1,4 @@
-body {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #95cfb7 0%, #8ee388 100%);
-}
+
 
 .hidden {
   display: none;
@@ -13,11 +6,11 @@ body {
 
 section {
   width: 100%;
+  height: 339px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 section article {
@@ -26,37 +19,16 @@ section article {
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
 }
 
-/* h1 {
-  color: #fc4f00;
-  font-family: "Righteous", cursive;
-  -webkit-text-stroke: 2.5px #000000;
-  font-size: 48px;
-  display: flex;
-} */
-
-/* button {
-  color: #121212;
-  font-family: "Advent Pro", sans-serif;
-  position: relative;
-  width: 156px;
-  height: 36px;
-  background-color: #fc4f00;
-  border-radius: 20px;
-  cursor: pointer;
-} */
 a {
   text-decoration: none;
 }
 
-/* .section-carrousel {
-  margin: 0;
-  padding: 0;
-} */
+
 
 /* // Animation */
 @keyframes scroll {
@@ -108,10 +80,11 @@ a {
   animation: scrollReverse 10s linear infinite;
 }
 .slide {
-  width: 250px;
+  width: 100px;
   height: 100%;
   text-align: center;
 }
+
 
 /* Media Queries */
 
@@ -124,3 +97,4 @@ a {
     flex-wrap: wrap;
   }
 }
+
