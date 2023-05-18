@@ -15,12 +15,16 @@ body {
   top: 12vh;
 }
 
+#manequeen {
+  position: relative;
+}
+
 #dress {
   position: absolute;
-  width: 18vw;
+  width: 162px;
   z-index: 2;
-  left: 7vw;
-  top: 18vh;
+  left: 139px;
+  top: 128px;
 }
 
 @media screen and (max-width: 500px) {
