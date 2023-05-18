@@ -49,14 +49,9 @@ const clothes = [
       src: "assets/img/cabeza/caebeza5.png",
       alt: "Gorro Bruja",
       clase: "cabeza",
-<<<<<<< HEAD
     },
     {
-      src: "./assets/img/cabeza/cabeza1.png",
-=======
-    },{
       src: "assets/img/cabeza/cabeza1.png",
->>>>>>> 94663ed7c7d11783e399ce892cc90f8d618a13ed
       alt: "Gorro mago",
       clase: "cabeza",
     },
