@@ -1,0 +1,20 @@
+button {
+  background: #e684c3;
+  border-radius: 20px;
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  /* line-height: 28px; */
+  color: #ffffff;
+  padding: 9px 15px;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  width: 233px;
+  height: 55px;
+}
+
+button:hover {
+  background: #e3acd0;
+}
