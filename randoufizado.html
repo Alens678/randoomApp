@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Styles  -->
-    <link rel="stylesheet" href="styles/randoufizado.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="styles/randoufizado.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +23,35 @@
     <title>RANDOM OUTFIT</title>
   </head>
   <body>
-    <a href="index.html"><h1 id="random-result">RANDOUTFIZADO!</h1></a>
+<!-- Modal cargar imagen -->
+<!-- Modal Sign Up -->
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <img id="cancel-btn" src="./assets/img/icon-cancel.svg" alt="icono cancelar">
+  </div>
+  <div class="modal-main">
+    <div class="add-image">
+      <img src="./assets/img/add-image.svg" alt="add image">
+      <p>Click para subir archivo</p>
 
+    </div>
+    <div>
+      <p>La imagen no debe superar los 2mb y
+        tiene que ser un .png con fondo transparente</p>
+          <button class="btn-yellow">Cargar</button>
+
+    </div>
+    
+    
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal overlay -->
+<div id="modal-overlay"></div>
+    <a href="index.html"><h1 id="random-result">RANDOUTFIZADO!</h1></a>
+    <div class="acciones-titulos">
     <section>
       <div class="acciones-titulos">
           <h4>Busca otra prenda</h4>
@@ -73,5 +102,7 @@
     <script src="js/motorRandom.js"></script>
     <!-- Carga imagen random -->
     <script src="js/randomImage.js"></script>
+    <!-- Script añadir prenda -->
+    <script src="./js/add.js"></script>
   </body>
 </html>
