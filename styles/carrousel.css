@@ -88,13 +88,13 @@ a {
 
 /* Media Queries */
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .section-carrousel {
     display: flex;
-    flex-wrap: wrap;
+   
   }
 }
 
