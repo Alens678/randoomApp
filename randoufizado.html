@@ -26,21 +26,31 @@
 <!-- Modal cargar imagen -->
 <!-- Modal Sign Up -->
 <div class="modal" id="modal">
+
+  
   <div class="modal-header">
     <img id="cancel-btn" src="./assets/img/icon-cancel.svg" alt="icono cancelar">
   </div>
   <div class="modal-main">
+          <!-- form -->
+  <form id="image-form">
     <div class="add-image">
       <img src="./assets/img/add-image.svg" alt="add image">
-      <p>Click para subir archivo</p>
+
+    <input type="file" id="image-input" accept="image/*" />
+
 
     </div>
+    
     <div>
       <p>La imagen no debe superar los 2mb y
         tiene que ser un .png con fondo transparente</p>
-          <button class="btn-yellow">Cargar</button>
+          <button type="submit">Guardar</button>
+
 
     </div>
+  </form>
+  <!-- fin form -->
     
     
       </div>
@@ -116,12 +126,15 @@
     </div>
     <h5>CALIFICA TU OUTFIT!</h5>
     <div class="like">
-      <img
+      <a href="#"><img
         id="like"
         src="assets/img/iconos/👍.png"
         alt="Dale like a tu outfit"
-      />
-      <img src="assets/img/iconos/👎.svg" alt="Dale dislike a tu outfit" />
+      /></a>
+
+      <a href="#"><img  id="dislike" src="assets/img/iconos/👎.svg" alt="Dale dislike a tu outfit" /></a>
+      
+      
     </div>
     <div class="botones-finales">
       <button>COMPARTIR</button>

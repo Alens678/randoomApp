@@ -99,6 +99,9 @@ a {
 }
 .add {
   width: 30px;
+  & img {
+    cursor: pointer;
+  }
 }
 
 .like {

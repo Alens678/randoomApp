@@ -45,6 +45,13 @@
   margin: 32px auto;
   border: black 1px solid;
   width: 80%;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  & img {
+    margin-top: 23px;
+  }
 }
 
 #modal {
@@ -74,4 +81,8 @@
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
   z-index: 4;
+}
+
+#image-input {
+  margin: 30px 0;
 }
