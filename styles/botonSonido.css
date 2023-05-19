@@ -1,0 +1,13 @@
+#miBoton {
+    font-size: 48px;
+    border:0;
+    background: transparent;
+
+}
+#miBoton {
+    transition: transform 0.2s;
+  }
+  
+  #miBoton.clicked {
+    transform: scale(7.1);
+  }
