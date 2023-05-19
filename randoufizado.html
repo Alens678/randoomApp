@@ -30,22 +30,30 @@
     <img id="cancel-btn" src="./assets/img/icon-cancel.svg" alt="icono cancelar">
   </div>
   <div class="modal-main">
-    <div class="add-image">
-      <img src="./assets/img/add-image.svg" alt="add image">
-      <p>Click para subir archivo</p>
+    <!-- form -->
+<form id="image-form">
+<div class="add-image">
+<img src="./assets/img/add-image.svg" alt="add image">
 
-    </div>
-    <div>
-      <p>La imagen no debe superar los 2mb y
-        tiene que ser un .png con fondo transparente</p>
-          <button class="btn-yellow">Cargar</button>
+<input type="file" id="image-input" accept="image/*" />
 
-    </div>
-    
-    
-      </div>
-    </form>
-  </div>
+
+</div>
+
+<div>
+<p>La imagen no debe superar los 2mb y
+  tiene que ser un .png con fondo transparente</p>
+    <button type="submit">Guardar</button>
+
+
+</div>
+</form>
+<!-- fin form -->
+
+
+</div>
+</form>
+</div>
 </div>
 
 <!-- Modal overlay -->
