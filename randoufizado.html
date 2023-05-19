@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles  -->
+    <!-- Modal -->
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="styles/randoufizado.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>RANDOM OUTFIT</title>
+  </head>
+  <body>
+<!-- Modal cargar imagen -->
+<!-- Modal Sign Up -->
+<div class="modal" id="modal">
+
+  
+  <div class="modal-header">
+    <img id="cancel-btn" src="./assets/img/icon-cancel.svg" alt="icono cancelar">
+  </div>
+  <div class="modal-main">
+          <!-- form -->
+    <form id="image-form">
+    <div class="add-image">
+      <img src="./assets/img/add-image.svg" alt="add image">
+
+    <input type="file" id="image-input" accept="image/*" />
+
+
+    </div>
+    
+    <div>
+      <p>La imagen no debe superar los 2mb y
+        tiene que ser un .png con fondo transparente</p>
+          <button type="submit">Guardar</button>
+
+
+    </div>
+    
+    
+    
+      </div>
+    </form>
+    <!-- fin form -->  
+  </div>
+</div>
+
+<!-- Modal overlay -->
+<div id="modal-overlay"></div>
+
+
+
+
+    <a href="index.html"><h1 id="random-result">RANDOUTFIZADO!</h1></a>
+    <div class="acciones-titulos">
+      <h4>Busca otra prenda</h4>
+      <h4>Agrega tu prenda</h4>
+    </div>
+
+    <div class="container-padre">
+      <div class="refresh-container">
+        <img
+          class="refresh"
+          src="assets/img/iconos/refresh.svg"
+          alt="Genera otro gorro"
+        />
+        <img
+          class="refresh"
+          src="assets/img/iconos/refresh.svg"
+          alt="Genera otra camisa/blusa"
+        />
+        <img
+          class="refresh"
+          src="assets/img/iconos/refresh.svg"
+          alt="Genera otro pantalon/falda"
+        />
+        <img
+          class="refresh"
+          src="assets/img/iconos/refresh.svg"
+          alt="Genera otros zapatos"
+        />
+      </div>
+
+      <section class="section-selected">
+        <div id="select-cabeza"></div>
+        <div id="select-pecho"></div>
+        <div id="select-piernas"></div>
+        <div id="select-pies"></div>
+      </section>
+
+      <div class="add container">
+        <img
+          class="add cabeza"
+          src="assets/img/iconos/add.svg"
+          alt="Añade tu propio gorro"
+        />
+        <img
+          class="add pecho"
+          src="assets/img/iconos/add.svg"
+          alt="Añade tu propia camisa/blusa"
+        />
+        <img
+          class="add piernas"
+          src="assets/img/iconos/add.svg"
+          alt="Añade tu propio pantalon"
+        />
+        <img
+          class="add pies"
+          src="assets/img/iconos/add.svg"
+          alt="Añade tus propios zapatos"
+        />
+      </div>
+    </div>
+    <h5>CALIFICA TU OUTFIT!</h5>
+    <div class="like">
+      <a href="#"><img
+        id="like"
+        src="assets/img/iconos/👍.png"
+        alt="Dale like a tu outfit"
+      /></a>
+
+      <a href="#"><img  id="dislike" src="assets/img/iconos/👎.svg" alt="Dale dislike a tu outfit" /></a>
+      
+      
+    </div>
+    <div class="botones-finales">
+      <button>COMPARTIR</button>
+      <button>FOTO</button>
+      <button>ATRÁS</button>
+    </div>
+
+
+    <!-- script JS -->
+    <script src="js/array.js"></script>
+    <!-- JS -->
+    <script src="js/motorRandom.js"></script>
+    <!-- Carga imagen random -->
+    <script src="js/randomImage.js"></script>
+    <!-- Script añadir prenda -->
+    <script src="./js/add.js"></script>
+  </body>
+</html>
