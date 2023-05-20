@@ -18,6 +18,11 @@ button {
   justify-content: center;
   
 }
+button a {
+
+  color: #ffffff;
+  
+}
 
 button:hover {
   background: #e3acd0;

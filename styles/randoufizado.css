@@ -126,6 +126,9 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.botones-finales button {
+  color: aliceblue;
+}
 .social-media{
   display: grid;
   justify-items: center;
