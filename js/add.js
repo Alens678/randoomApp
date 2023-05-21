@@ -12,6 +12,7 @@ const cancelBtn = document.getElementById("cancel-btn");
 // Seleccionar elementos Form
 // Obtener elementos del DOM
 const form = document.getElementById("image-form");
+const addImage = form.querySelector(".add-image");
 const imageInput = document.getElementById("image-input");
 const preview = document.getElementById("preview");
 
@@ -47,13 +48,15 @@ const addImageFunction = (event) => {
       images.push(imageDataUrl);
       console.log(images);
 
-      // Mostrar la imagen en el div de vista previa ESTA PARTE ES LA QUE SE HA DE CAMBIAR
+      // Mostrar la imagen en el div de vista previa
       const image = document.createElement("img");
+
       image.src = imageDataUrl;
       image.alt = "Preview Image";
       image.width = "100"; //tamño con el que se mostrará en la web
       //   preview.innerHTML = "";
       //   preview.appendChild(image);
+
       divCabeza.innerHTML = "";
       divCabeza.appendChild(image);
     };

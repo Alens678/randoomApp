@@ -7,6 +7,7 @@
 
     <!-- Styles  -->
     <!-- Modal -->
+    <link rel="stylesheet" href="styles/cam.css">
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/randoufizado.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
@@ -25,7 +26,6 @@
   </head>
   <body>
 <!-- Modal cargar imagen -->
-<!-- Modal Sign Up -->
 <div class="modal" id="modal">
 
   
@@ -47,11 +47,7 @@
       <p>La imagen no debe superar los 2mb y
         tiene que ser un .png con fondo transparente</p>
           <button type="submit">Guardar</button>
-
-
-    </div>
-    
-    
+    </div>   
     
       </div>
     </form>
@@ -59,11 +55,31 @@
   </div>
 </div>
 
+<!-- Modal cargar abrir camara -->
+<div class="modal modal-cam" id="modal-cam">  
+  <div class="modal-header">
+    <img id="cancel-btn2" src="./assets/img/icon-cancel.svg" alt="icono cancelar">
+  </div>
+  <div>
+    
+    <video id="video" autoplay></video>
+    <div class="btn-cam">
+      <button id="open-camera-btn">Abrir cámara</button>
+      <button id="capture-btn">Capturar foto</button>
+
+    </div>
+   
+    <canvas id="canvas" style="display: none"></canvas>
+    
+
+  </div>
+ 
+</div>
+
+
 <!-- Modal overlay -->
 <div id="modal-overlay"></div>
-
-
-
+<div id="modal-overlay2"></div>
 
     <a href="index.html"><h1 id="random-result">RANDOUTFIZADO!</h1></a>
     <div class="acciones-titulos">
@@ -127,13 +143,7 @@
     </div>
     <h5>CALIFICA TU OUTFIT!</h5>
     <div class="like">
-      <!-- <a href="#"><img
-        id="like"
-        src="assets/img/iconos/👍.png"
-        alt="Dale like a tu outfit"
-      /></a>
 
-      <a href="#"><img  id="dislike" src="assets/img/iconos/👎.svg" alt="Dale dislike a tu outfit" /></a>  -->
       <button id="miBoton">👍</button>
       <button id="miBoton2">👎</button>
       
@@ -142,7 +152,7 @@
     </div>
     <div class="botones-finales">
       <button>COMPARTIR</button>
-      <button>FOTO</button>
+      <button id="foto">FOTO</button>
       <button> <a href="./home.html">ATRÁS</a></button>
     </div>
 
@@ -156,5 +166,8 @@
     <!-- Script añadir prenda -->
     <script src="./js/add.js"></script>
     <script src="./js/sonido.js"></script>
+    <!-- Cam -->
+    <script src="./js/cam.js"></script>
+    <script src="./js/capturePhoto.js"></script>
   </body>
 </html>
