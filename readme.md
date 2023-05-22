@@ -53,4 +53,4 @@ Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5,
 
 
 ## Url de la aplicación desplegada
-***_https://alens678.github.io/randoomApp/_***
+***_https://randoom-app.vercel.app/index.html_***
