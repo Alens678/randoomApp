@@ -1,7 +1,7 @@
 // Obtener el elemento del botón "FOTO" del DOM
 const fotoBtn = document.querySelector("#foto");
 const modalOverlay2 = document.getElementById("modal-overlay2");
-const modalCam = document.querySelector("#modal-cam");
+// const modalCam = document.querySelector("#modal-cam");
 const cancelBtn2 = document.getElementById("cancel-btn2");
 
 // Función para mostrar el modal de captura de foto

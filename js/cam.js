@@ -4,6 +4,7 @@ const captureBtn = document.getElementById("capture-btn");
 const videoElement = document.getElementById("video");
 const canvasElement = document.getElementById("canvas");
 const context = canvasElement.getContext("2d");
+const modalCam = document.querySelector("#modal-cam");
 
 // Función para abrir la cámara
 function openCamera() {
@@ -54,5 +55,5 @@ openCameraBtn.addEventListener("click", openCamera);
 captureBtn.addEventListener("click", capturePhoto);
 
 modalCam.addEventListener("transitionend", function () {
-  openCamera();
+  openCamera;
 });
