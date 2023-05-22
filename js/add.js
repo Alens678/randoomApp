@@ -4,6 +4,12 @@ const btnAddPecho = document.querySelector(".add .pecho");
 const btnAddPiernas = document.querySelector(".add .piernas");
 const btnAddPies = document.querySelector(".add .pies");
 
+//Variable 
+
+let divImagen;
+
+
+
 // Seleccion DOM Modal
 const modalOverlay = document.getElementById("modal-overlay");
 const modal = document.getElementById("modal");
@@ -24,12 +30,12 @@ const divPies = document.getElementById("select-pies");
 
 // Funcion para guardar imagen en localstorage y luego que se muestre en el html
 // Funcion para guardar imagen en el array y luego mostrarla en el HTML
-const addImageFunction = (event) => {
+const addImageCabeza = (event) => {
   event.preventDefault();
 
   // Obtener la imagen seleccionada en el input file
   const file = imageInput.files[0];
-  console.log(file);
+  console.log(file.type);
 
   // Validar si se seleccionó una imagen
   if (file && file.type.includes("image")) {
@@ -46,8 +52,8 @@ const addImageFunction = (event) => {
       image.src = imageDataUrl;
       image.alt = "Preview Image";
       image.width = "100"; // Tamaño con el que se mostrará en la web
-      divCabeza.innerHTML = "";
-      divCabeza.appendChild(image);
+      divImagen.innerHTML = "";
+      divImagen.appendChild(image);
 
       // Guardar la imagen en el array
       newImage(image);
@@ -58,6 +64,8 @@ const addImageFunction = (event) => {
     cancelF();
   }
 };
+
+
 
 // Funncion para guardar la imagen en el array de objetos
 const newImage = (image) => {
@@ -70,19 +78,26 @@ const newImage = (image) => {
 };
 
 // Agregar evento submit al formulario
-form.addEventListener("submit", addImageFunction);
+form.addEventListener("submit", addImageCabeza);
 
-// Evento al pulsar boton
-btnAddCabeza.addEventListener("click", addImageFunction);
-btnAddPecho.addEventListener("click", (e) => {
-  console.log("pecho");
-});
-btnAddPiernas.addEventListener("click", (e) => {
-  console.log("piernas");
-});
-btnAddPies.addEventListener("click", (e) => {
-  console.log("pies");
-});
+
+//Funciones para guardar variable de la imagen a modificar
+
+function mostrarCabeza() {
+ divImagen = divCabeza
+}
+
+function mostrarPecho() {
+  divImagen = divPecho
+}
+
+function mostrarPiernas() {
+  divImagen = divPiernas
+}
+
+function mostrarPies() {
+  divImagen = divPies
+}
 
 // Eventos Modal
 const mostrarF = () => {
@@ -96,5 +111,12 @@ const cancelF = () => {
 };
 
 btnAddCabeza.addEventListener("click", mostrarF);
+btnAddCabeza.addEventListener("click", mostrarCabeza)
+btnAddPecho.addEventListener("click", mostrarF);
+btnAddPecho.addEventListener("click", mostrarPecho)
+btnAddPiernas.addEventListener("click", mostrarF);
+btnAddPiernas.addEventListener("click", mostrarPiernas)
+btnAddPies.addEventListener("click", mostrarF);
+btnAddPies.addEventListener("click", mostrarPies)
 
 cancelBtn.addEventListener("click", cancelF);
