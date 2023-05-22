@@ -4,11 +4,9 @@ const btnAddPecho = document.querySelector(".add .pecho");
 const btnAddPiernas = document.querySelector(".add .piernas");
 const btnAddPies = document.querySelector(".add .pies");
 
-//Variable 
+//Variable
 
 let divImagen;
-
-
 
 // Seleccion DOM Modal
 const modalOverlay = document.getElementById("modal-overlay");
@@ -65,40 +63,55 @@ const addImageCabeza = (event) => {
   }
 };
 
-
-
 // Funncion para guardar la imagen en el array de objetos
 const newImage = (image) => {
   let newImg = new Object();
   newImg.src = image.src;
   newImg.alt = "";
-  newImg.clase = "cabeza";
+
   const newArray = JSON.parse(localStorage.getItem("clothes"));
-  newArray[0].unshift(newImg);
+  // Condicion para guardar en diferentes posicions del array
+  if (clase === "cabeza") {
+    newImg.clase = "cabeza";
+    newArray[0].unshift(newImg);
+  } else if (clase === "pecho") {
+    newImg.clase = "pecho";
+    newArray[1].unshift(newImg);
+  } else if (clase === "piernas") {
+    newImg.clase = "piernas";
+    newArray[2].unshift(newImg);
+  } else if (clase === "pies") {
+    newImg.clase = "pies";
+    newArray[3].unshift(newImg);
+  }
+
   localStorage.setItem("clothes", JSON.stringify(newArray));
-  console.log(newArray[0]);
+  console.log(newArray);
 };
 
 // Agregar evento submit al formulario
 form.addEventListener("submit", addImageCabeza);
 
-
 //Funciones para guardar variable de la imagen a modificar
-
+let clase = "";
 function mostrarCabeza() {
- divImagen = divCabeza
+  divImagen = divCabeza;
+  clase = "cabeza";
 }
 
 function mostrarPecho() {
-  divImagen = divPecho
+  divImagen = divPecho;
+  clase = "pecho";
 }
 
 function mostrarPiernas() {
-  divImagen = divPiernas
+  divImagen = divPiernas;
+  clase = "piernas";
 }
 
 function mostrarPies() {
-  divImagen = divPies
+  divImagen = divPies;
+  clase = "pies";
 }
 
 // Eventos Modal
@@ -113,12 +126,12 @@ const cancelF = () => {
 };
 
 btnAddCabeza.addEventListener("click", mostrarF);
-btnAddCabeza.addEventListener("click", mostrarCabeza)
+btnAddCabeza.addEventListener("click", mostrarCabeza);
 btnAddPecho.addEventListener("click", mostrarF);
-btnAddPecho.addEventListener("click", mostrarPecho)
+btnAddPecho.addEventListener("click", mostrarPecho);
 btnAddPiernas.addEventListener("click", mostrarF);
-btnAddPiernas.addEventListener("click", mostrarPiernas)
+btnAddPiernas.addEventListener("click", mostrarPiernas);
 btnAddPies.addEventListener("click", mostrarF);
-btnAddPies.addEventListener("click", mostrarPies)
+btnAddPies.addEventListener("click", mostrarPies);
 
 cancelBtn.addEventListener("click", cancelF);
