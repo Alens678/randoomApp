@@ -65,8 +65,10 @@ const newImage = (image) => {
   newImg.src = image.src;
   newImg.alt = "";
   newImg.clase = "cabeza";
-  clothes[0].unshift(newImg);
-  console.log(clothes[0]);
+  const newArray = JSON.parse(localStorage.getItem("clothes"));
+  newArray[0].unshift(newImg);
+  localStorage.setItem("clothes", JSON.stringify(newArray));
+  console.log(newArray[0]);
 };
 
 // Agregar evento submit al formulario

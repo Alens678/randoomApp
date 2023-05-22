@@ -1,4 +1,4 @@
-const clothes = [
+clothes = [
   [
     {
       src: "./assets/img/cabeza/cabeza1.png",
