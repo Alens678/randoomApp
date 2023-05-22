@@ -35,12 +35,20 @@ Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5,
 
 ## Retos y futuros desarrollos
 
-Nos hemos enfrentado a:
+*Nos hemos enfrentado a:*
+
+- Función para guardar imagen en localstorage y luego que se muestre en el html.
+
+- Función para abrir la cámara.
+
+- Crear el bucle para generar las imágenes del carrousel.
 
 
+*Características que se esperan desarrollar en el futuro:*
 
+- Desarrollar el botón "refresh" en el apartado de randoutfizado para que busque y muestre una nueva prenda.
 
-Características que se esperan desarrollar en el futuro:
+- Desarrollar el botón compartir para que se pueda compartir a redes sociales los outfits generados.
 
 
 
