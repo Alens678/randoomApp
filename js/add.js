@@ -12,6 +12,7 @@ const cancelBtn = document.getElementById("cancel-btn");
 // Seleccionar elementos Form
 // Obtener elementos del DOM
 const form = document.getElementById("image-form");
+const addImage = form.querySelector(".add-image");
 const imageInput = document.getElementById("image-input");
 const preview = document.getElementById("preview");
 
@@ -22,6 +23,7 @@ const divPiernas = document.getElementById("select-piernas");
 const divPies = document.getElementById("select-pies");
 
 // Funcion para guardar imagen en localstorage y luego que se muestre en el html
+// Funcion para guardar imagen en el array y luego mostrarla en el HTML
 const addImageFunction = (event) => {
   event.preventDefault();
 
@@ -37,25 +39,18 @@ const addImageFunction = (event) => {
     // Configurar evento de carga del FileReader
     reader.onload = function (event) {
       // Obtener el resultado de la lectura del archivo (URL base64)
-      // console.log(event);
       const imageDataUrl = event.target.result;
 
-      // Guardar la imagen en el localStorage
-      localStorage.setItem("imageDataUrl", imageDataUrl);
-
-      const images = [];
-      images.push(imageDataUrl);
-      console.log(images);
-
-      // Mostrar la imagen en el div de vista previa ESTA PARTE ES LA QUE SE HA DE CAMBIAR
+      // Mostrar la imagen en el div de vista previa
       const image = document.createElement("img");
       image.src = imageDataUrl;
       image.alt = "Preview Image";
-      image.width = "100"; //tamño con el que se mostrará en la web
-      //   preview.innerHTML = "";
-      //   preview.appendChild(image);
+      image.width = "100"; // Tamaño con el que se mostrará en la web
       divCabeza.innerHTML = "";
       divCabeza.appendChild(image);
+
+      // Guardar la imagen en el array
+      newImage(image);
     };
 
     // Leer el archivo como URL base64
@@ -63,6 +58,19 @@ const addImageFunction = (event) => {
     cancelF();
   }
 };
+
+// Funncion para guardar la imagen en el array de objetos
+const newImage = (image) => {
+  let newImg = new Object();
+  newImg.src = image.src;
+  newImg.alt = "";
+  newImg.clase = "cabeza";
+  const newArray = JSON.parse(localStorage.getItem("clothes"));
+  newArray[0].unshift(newImg);
+  localStorage.setItem("clothes", JSON.stringify(newArray));
+  console.log(newArray[0]);
+};
+
 // Agregar evento submit al formulario
 form.addEventListener("submit", addImageFunction);
 

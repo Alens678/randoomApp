@@ -54,7 +54,8 @@
   }
 }
 
-#modal {
+#modal,
+#modal-cam {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -63,7 +64,13 @@
   z-index: 8;
 }
 
-#cancel-btn {
+#modal,
+.modal-cam {
+  display: none;
+}
+
+#cancel-btn,
+#cancel-btn2 {
   cursor: pointer;
 }
 
@@ -72,7 +79,8 @@
 }
 
 /* overlay */
-#modal-overlay {
+#modal-overlay,
+#modal-overlay2 {
   position: fixed;
   top: 0;
   left: 0;
