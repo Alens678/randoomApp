@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #95cfb7 0%, #8ee388 100%);
+  margin-top: -5px;
+  overflow: hidden;
+}
+#presentacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#manequeen {
+  width: 200px;
+  height:100%;
+}
+
+.container-padre {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+.img {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+
+}
+.intro-juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.intro-juego h1,
+.intro-juego p {
+  margin: 2rem 0;
+}
+
+.intro-juego {
+  & h3 {
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  & p {
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #fc4f00;
+    
+}
+
+a{
+  text-decoration: none;
+}

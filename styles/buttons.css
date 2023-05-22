@@ -1,0 +1,35 @@
+button {
+  background: #e684c3;
+  border-radius: 20px;
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  /* line-height: 28px; */
+  color: #ffffff;
+  padding: 9px 15px;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  width: fit-content;
+  /* height: 55px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+button a {
+
+  color: #ffffff;
+  
+}
+
+button:hover {
+  background: #e3acd0;
+}
+
+#crossing-fingers{
+  height: 35px;
+  overflow: hidden;
+  width: min-content;
+}

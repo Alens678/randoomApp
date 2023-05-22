@@ -1,0 +1,100 @@
+
+
+.hidden {
+  display: none;
+}
+
+section {
+  width: 100%;
+  height: 339px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section article {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* // Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+/* Carrousel */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 3));
+  }
+}
+
+@keyframes scrollReverse {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(calc(-250px * 3));
+  }
+}
+.slider {
+  width: 60%;
+  background: none;
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider div {
+  display: flex;
+  width: calc(250px * 6);
+  height: 100%;
+}
+
+#card-cabeza div,
+#card-piernas div {
+  animation: scroll 10s linear infinite;
+}
+#card-pecho div,
+#card-pies div {
+  animation: scrollReverse 10s linear infinite;
+}
+.slide {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+  .section-carrousel {
+    display: flex;
+   
+  }
+}
+

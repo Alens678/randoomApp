@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RanDom App</title>
+    <title>RanDom App - Instrucciones</title>
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+
+  <body>
+    <section id="presentacion">
+      <div class="container-padre">
+        <div class="intro-juego">
+          <h1>RANDOUTFIT</h1>
+          <h3>Explicación del juego</h3>
+          <p>
+            Esta aplicación sirve para generar outfits de forma random para que
+            no tengas que pensar en que te vas a poner la próxima vez que tengas
+            que salir de casa
+          </p>
+          <a href="home.html">
+            <button>INICIAR</button>
+          </a>
+        </div>
+      </div>
+      <div class="img">
+        <img id="manequeen" src="./assets/img/maniqui.gif" alt="img" />
+      </div>
+    </section>
+    <script src="/js/array.js"></script>
+    <script>
+      localStorage.setItem("clothes", JSON.stringify(clothes));
+    </script>
+  </body>
 </html>

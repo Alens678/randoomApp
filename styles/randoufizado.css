@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 800px) {
+  .add-container {
+    align-items: flex-start !important;
+  }
+  .refresh-container {
+    align-items: flex-end !important;
+  }
+  .acciones-titulos {
+    justify-content: space-evenly !important;
+  }
+  .botones-finales {
+    justify-content: space-evenly !important;
+  }
+}
+body {
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #95cfb7 0%, #8ee388 100%);
+  margin-top: -5px;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #e684c3;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.acciones-titulos {
+  display: flex;
+  justify-content: space-around;
+}
+
+h4 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  color: #e684c3;
+  text-align: center;
+  margin-top: 2rem;
+}
+h5 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  color: #e684c3;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-padre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 1 rem;
+}
+
+.refresh-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.refresh-container img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.section-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add {
+  width: 30px;
+  & img {
+    cursor: pointer;
+  }
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+}
+.like img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+#like {
+  transform: rotate(-180deg);
+}
+.botones-finales {
+  display: flex;
+  justify-content: space-around;
+}
+.botones-finales button {
+  color: aliceblue;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+article {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 27%;
+  gap: 9px;
+}
+
+.cam {
+  height: 3rem;
+}
