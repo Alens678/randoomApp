@@ -5,7 +5,7 @@ boton.addEventListener("click", reproducirSonido);
 
 
 function reproducirSonido() {
-  const audio = new Audio('wow-113128.mp3');
+  const audio = new Audio('assets/sound/wow-113128.mp3');
   audio.play();
 
   boton.classList.add("clicked");
@@ -22,7 +22,7 @@ boton2.addEventListener("click", reproducirSonido2);
 
 
 function reproducirSonido2() {
-  const audio = new Audio('bu.mp3');
+  const audio = new Audio('assets/sound/bu.mp3');
   audio.play();
 
   boton2.classList.add("clicked");
