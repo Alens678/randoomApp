@@ -53,4 +53,4 @@ Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5,
 
 
 ## Url de la aplicación desplegada
-***_http://127.0.0.1:5500/home.html_***
+***_https://alens678.github.io/randoomApp/_***
